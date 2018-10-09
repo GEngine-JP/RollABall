@@ -1,0 +1,274 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0FB6001-0644-41DA-982D-102F25C091A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS</RootNamespace>
+    <AssemblyName>SMS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\ConnClass.cs" />
+    <Compile Include="BaseClass\GSM.cs" />
+    <Compile Include="AddDy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDy.Designer.cs">
+      <DependentUpon>AddDy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cydy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cydy.Designer.cs">
+      <DependentUpon>Cydy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dy.Designer.cs">
+      <DependentUpon>Dy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DyChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyChange.Designer.cs">
+      <DependentUpon>DyChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lock.Designer.cs">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resvice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resvice.Designer.cs">
+      <DependentUpon>Resvice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendSMS.Designer.cs">
+      <DependentUpon>SendSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmsXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmsXX.Designer.cs">
+      <DependentUpon>SmsXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tel.Designer.cs">
+      <DependentUpon>Tel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelNote.Designer.cs">
+      <DependentUpon>TelNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yfxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yfxx.Designer.cs">
+      <DependentUpon>Yfxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddDy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cydy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cydy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dy.resx">
+      <DependentUpon>Dy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DyChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resvice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resvice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendSMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SendSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmsXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SmsXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelNote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TelNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yfxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Yfxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\bg.jpg" />
+    <Content Include="DataBase\db_SMS.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\an_1.gif" />
+    <Content Include="Image\an_2.gif" />
+    <Content Include="Image\b1.gif" />
+    <Content Include="Image\b2.gif" />
+    <Content Include="Image\bg_1.gif" />
+    <Content Include="Image\bg_2.gif" />
+    <Content Include="Image\j_1.gif" />
+    <Content Include="Image\login.jpg" />
+    <Content Include="Image\login_1.gif" />
+    <Content Include="Image\login_2.gif" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\new_nav_r1_c1.gif" />
+    <None Include="Resources\menu_top_r1_c2.gif" />
+    <None Include="Resources\sort_bg_02.gif" />
+    <None Include="Resources\search_bg.jpg" />
+    <None Include="Resources\mb_08.gif" />
+    <None Include="Resources\plyer_r5_c2.jpg" />
+    <None Include="Resources\vod_mf_r21_c7.jpg" />
+    <None Include="Resources\bg10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
