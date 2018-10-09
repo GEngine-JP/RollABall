@@ -25,13 +25,21 @@ namespace SMS
             {
                 if (txtLoginName.Text == "")
                 {
+<<<<<<< HEAD
                     MessageBox.Show("ç”¨æˆ·åä¸èƒ½ä¸ºç©º");
+=======
+                    MessageBox.Show("ÓÃ»§Ãû²»ÄÜÎª¿Õ");
+>>>>>>> e0e56366e705633044693d73d82864e260b3f212
                 }
                 else
                 {
                     if (txtLoginPwd.Text == "")
                     {
+<<<<<<< HEAD
                         MessageBox.Show("å¯†ç ä¸èƒ½ä¸ºç©º");
+=======
+                        MessageBox.Show("ÃÜÂë²»ÄÜÎª¿Õ");
+>>>>>>> e0e56366e705633044693d73d82864e260b3f212
                     }
                     else
                     {
@@ -49,7 +57,11 @@ namespace SMS
                         }
                         else
                         {
+<<<<<<< HEAD
                             MessageBox.Show("ç”¨æˆ·åæˆ–è€…å¯†ç é”™è¯¯");
+=======
+                            MessageBox.Show("ÓÃ»§Ãû»òÕßÃÜÂë´íÎó");
+>>>>>>> e0e56366e705633044693d73d82864e260b3f212
                         }
                     }
                 }
